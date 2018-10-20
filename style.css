@@ -74,6 +74,10 @@ footer
 	background-color: #008;
 	color: #FFF;
 }
+.rodape
+{
+	margin-left: 30%;
+}
 .hh
 {
   	font:150% Tahoma;
@@ -134,3 +138,41 @@ h2
 {
 	display: none;
 }
+#video
+{
+	margin-left: 30%
+}
+.hhTras 
+{
+	font:150% Tahoma;
+	margin-left: 30%;
+}
+.meioTrans img
+{
+	height: 250px;
+	margin-top: 8px;
+	margin-left: 15px;
+	margin-right: 20px;
+	float: right;
+}
+.meioTrans
+{
+	margin-top: 10px;
+	margin-left: 15px;
+	margin-right: 20px;
+}
+.meio2 img
+{
+	height: 250px;
+	margin-top: 8px;
+	margin-left: 10px;
+	margin-right: 15px;
+	float: left;
+}
+.meio2
+{
+	margin-top: 5px;
+	margin-left: 15px;
+	margin-right: 20px;
+}
+
