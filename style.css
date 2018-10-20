@@ -1,0 +1,136 @@
+body 
+{ 
+	font-family: arial;
+	padding:0px; margin:0px; 
+	background: #EDEDED;
+}
+header
+{
+	background-color: #336e7b;
+	width: 1370px;
+	height: 200px;
+	border: 2px solid;
+	background:#white;
+	margin:0px auto;
+}
+header img 
+{
+	height: 170px;
+}
+header h1
+{
+	padding: 10px;
+	width: 800px; 
+  	float:right;
+  	font:350% Tahoma;
+  	color: #FFF
+}
+#menu ul
+{ 
+	padding:0px; margin:0px; 
+	float: left; width: 100%;
+	background-color:#EDEDED; 
+	list-style:none; 
+	font:100% Tahoma;
+	border: 2px solid; 
+}
+#menu ul li 
+{ 
+	display: inline; 
+} 
+#menu ul li a 
+{ 
+	background-color:#EDEDED; 
+	color: #333; 
+	text-decoration: none; 
+	border-bottom:3px solid #EDEDED; 
+	padding: 2px 10px; 
+	float:left; 
+} 
+#menu ul li a:hover 
+{ 
+	background-color:#D6D6D6; 
+	color: #6D6D6D; 
+	border-bottom:3px solid #EA0000; 
+}
+footer
+{
+    width: 100%;
+    height: 150px;
+    background-color: #336e7b; 
+    border:2px solid;
+}
+.rodape a:link 
+{
+	text-decoration:none;
+}
+.rodape a:visited 
+{
+	color: #FF0;
+}
+
+.rodape ul li a:hover 
+{
+	background-color: #008;
+	color: #FFF;
+}
+.hh
+{
+  	font:150% Tahoma;
+  	color: #777
+}
+.meio p
+{
+	margin-top: 10px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+h2
+{
+	font: 180% Tahoma;
+	margin-left: 140px;
+}
+.cad  
+{
+	font-family: arial;
+	margin-left: 500px;
+	padding-top: 25px;
+}		
+.cad input
+{
+	width:300px
+	height:100px;
+    border-radius: 10px;
+    padding: 4px;
+}
+.cad select
+{
+	width:30px
+	height:10px;
+    border-radius: 10px;
+    padding: 4px;
+}
+.btn input
+{
+	padding: 15px;
+	padding-top: 20px;
+	margin-left: 1050px;
+    border-radius: 10px; 
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    background-color:#2E8B57;
+    color: #FFF;
+}    
+
+#imgCerto
+{
+	display: none;
+	width: 20px;
+	height: 20px;
+}
+#div_curso
+{
+	display: none;
+}

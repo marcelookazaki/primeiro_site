@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Faça seu Cadastro</title>
+	<link rel="stylesheet" href="style.css"/>
+	<script src="script.js"></script>
+</head>
+<body>
+	<header>
+		<div id="menu" >
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="IA.html">IA</a></li>	
+			</ul>
+		<div id="logo">
+			<img src="img\img4.png" alt="logo" />
+			<h1>Faça seu Cadastro</h1>
+		</div>
+	</header>
+	<form name="formulario1">
+		<div class="cad">
+			<label>Nome:</label><br>
+			<input type="text" name="nome" placeholder="Nome Completo" size="30" pattern="[a-z\s]+$"/><br>
+	
+			<label>E-mail:</label><br>
+			<input type="text" name="email" placeholder="Exemplo:cadastro@gmail.com" size="30"/><br>
+		
+			<label>Senha:</label><br>
+			<input type="password" name="senha" /><br>
+		
+			<label>Confirme sua senha:</label><br>
+			<input type="password" name="senha1" onchange="VerificaSenha()" />
+			<img src="img\certo.png" alt="certo" id="imgCerto"/><br>
+			
+			<label>Você Faz faculdade:</label><br>
+			<input type="radio" name="facul" value="sim" onclick="mostrarCurso()" />Sim <br>
+			<input type="radio" name="facul"  value="nao" onclick="ocultarCurso()" />Não<br>
+
+			<div id="div_curso">
+				Oque esta Cursando:<br>
+				<select name="curso">
+				<option>Selecione seu Curso:</option>
+				<option>Sistema de Informação</option><br>
+				<option>Analise e Desenvolvimento de Sistemas</option><br>
+				</select><br>
+			</div>
+
+			<label>Sexo:</label><br>
+			<input type="radio" name="genero" value="m" />Masculino<br>
+			<input type="radio" name="genero" value="f" />Feminino<br>
+		</div>
+		<div class="btn">
+			<input type="button" name="btncastrar" value="Cadastrar" onclick="cadastrar()"/>
+		</div>
+	</form>
+</body>
+</html>
