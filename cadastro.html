@@ -5,13 +5,14 @@
 	<title>Faça seu Cadastro</title>
 	<link rel="stylesheet" href="style.css"/>
 	<script src="script.js"></script>
+
 </head>
 <body>
 	<header>
 		<div id="menu" >
 			<ul>
 				<li><a href="index.html">Home</a></li>
-				<li><a href="IAtransportes.html">Inteligência Artificial em transportes</a></li>	
+				<li><a href="IAtransportes.html">Inteligência Artificial em transportes</a></li>			
 			</ul>
 		<div id="logo">
 			<img src="img\img4.png" alt="logo" />
@@ -21,10 +22,13 @@
 	<form name="formulario1">
 		<div class="cad">
 			<label>Nome:</label><br>
-			<input type="text" name="nome" placeholder="Nome Completo" size="30" pattern="[a-z\s]+$"/><br>
+			<input type="text" name="nome" placeholder="Nome Completo" size="30" onblur="regnome()" /><br>
 	
 			<label>E-mail:</label><br>
-			<input type="text" name="email" placeholder="Exemplo:cadastro@gmail.com" size="30"/><br>
+			<input type="text" name="email" placeholder="Exemplo:cadastro@gmail.com" size="30" onblur="regemail()"/><br>
+
+			<label>Telefone:</label><br>
+			<input type="text" name="tel" placeholder="0000-0000"><BR>
 		
 			<label>Senha:</label><br>
 			<input type="password" name="senha" /><br>
