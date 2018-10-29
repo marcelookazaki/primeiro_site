@@ -21,7 +21,7 @@ function cadastrar(){
 	var senha = document.formulario1.senha.value;
 	var senhaConfirmar = document.formulario1.senha1.value;
 
-	var reg_tel = /(\(11\) (9\d{4})-\d{4})|((\(1[2-9]{1}\)|\([2-9]{1}\d{1}\)) [5-9]\d{3}-\d{4})$/;
+	var reg_tel = /^(\()?(\d{2})?(\))?([-.\s])?([9])?(\d{4})([-.\s])?(\d{4})$/;
 	var padrao_nome = /[0-9]/g;
 	var reg_email = /^([0-9a-zA-Z]([-_\\.]*[0-9a-zA-Z]+)*)@([0-9a-zA-Z]([-_\\.]*[0-9a-zA-Z]+)*)[\\.]([a-zA-Z]{2,9})$/;
 
@@ -47,7 +47,7 @@ function cadastrar(){
 	};
 	if(senha == ""){
 		alert("Por favor digitar a senha.");
-		document.formulario1.senha.focus();
+		document.formulario1.senha.focus();	
 		return false;
 
 	}
@@ -64,7 +64,7 @@ function cadastrar(){
 	}
 	else if(!tel.match(reg_tel)){
 		document.formulario1.tel.focus();
-		alert("Insira apenas numeros!");
+		alert("O numero do telefone está incorreto!");
 		return false;
 	}
 
