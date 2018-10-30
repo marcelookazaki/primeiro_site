@@ -5,7 +5,6 @@
 	<title>Faça seu Cadastro</title>
 	<link rel="stylesheet" href="style.css"/>
 	<script src="script.js"></script>
-
 </head>
 <body>
 	<header>
@@ -19,7 +18,7 @@
 			<h1>Faça seu Cadastro</h1>
 		</div>
 	</header>
-	<form name="formulario1">
+	<form name="formulario1" method="GET" action="cadastro.php">
 		<div class="cad">
 			<label>Nome:</label><br>
 			<input type="text" name="nome" placeholder="Nome Completo" size="30" ><br>
@@ -28,14 +27,28 @@
 			<input type="text" name="cpf" maxlenght="11"><br>
 	
 			<label>E-mail:</label><br>
-			<input type="text" name="email" placeholder="Exemplo:cadastro@gmail.com" size="30" /><br>
+			<input type="text" name="email" placeholder="Exemplo:cadastro@gmail.com" size="30"/><br>
 
 			<label>Telefone:</label><br>
 			<input type="text" name="tel" placeholder="0000-0000"><BR>
-		
+
 			<label>Senha:</label><br>
 			<input type="password" name="senha" /><br>
-		
+
+<!-- 			<?php
+/*			$_senha = $_GET['senha'];*/
+
+/*			if (isset($_senha)){*/
+
+/*				$contsenha = strlen($_senha);*/
+
+/*				if($contsenha < 8){*/
+				
+/*					echo("Senha está muito fraca") . "<br>";*/
+				}
+			}	
+			?>
+		 -->
 			<label>Confirme sua senha:</label><br>
 			<input type="password" name="senha1" onchange="VerificaSenha()" />
 			<img src="img\certo.png" alt="certo" id="imgCerto"/><br>
